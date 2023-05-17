@@ -1,8 +1,8 @@
 ﻿from datetime import datetime
 import locale
 from biopython import print_protein_sequence_from_DNA
-from salary import calculate_salary
-from people import get_employees
+from application.salary import calculate_salary
+from application.db.people import get_employees
 
 locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 DNA = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"

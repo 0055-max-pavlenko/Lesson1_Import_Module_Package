@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>Lesson1_Import_Module_Package</Name>
     <RootNamespace>Lesson1_Import_Module_Package</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,8 +24,12 @@
   <ItemGroup>
     <Compile Include="biopython.py" />
     <Compile Include="main.py" />
-    <Compile Include="people.py" />
-    <Compile Include="salary.py" />
+    <Compile Include="application\db\people.py" />
+    <Compile Include="application\salary.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="application\" />
+    <Folder Include="application\db\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
